@@ -8,8 +8,8 @@ import org.apache.lucene.morphology.russian.RussianLuceneMorphology;
 import java.io.IOException;
 import java.util.*;
 
-public class MorphologyAnalyzer {
-    private static final Log log = LogFactory.getLog(MorphologyAnalyzer.class);
+public class Morphology {
+    private static final Log log = LogFactory.getLog(Morphology.class);
     private static final Set<String> parts;
     private static LuceneMorphology morphology = null;
     private final TreeMap<String, Integer> map;
@@ -28,7 +28,7 @@ public class MorphologyAnalyzer {
         }
     }
 
-    public MorphologyAnalyzer(){
+    public Morphology(){
         map = new TreeMap<>();
     }
 

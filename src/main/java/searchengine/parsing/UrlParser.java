@@ -11,14 +11,14 @@ import java.util.List;
 import java.util.Vector;
 import java.util.concurrent.RecursiveTask;
 
-public class ParseUrl extends RecursiveTask<String> {
+public class UrlParser extends RecursiveTask<String> {
     public final static List<String> urlList = new Vector<>();
 
-    private final static Log log = LogFactory.getLog(ParseUrl.class);
+    private final static Log log = LogFactory.getLog(UrlParser.class);
     private final String url;
     private final boolean isInterrupted;
 
-    public ParseUrl(String url, boolean isInterrupted) {
+    public UrlParser(String url, boolean isInterrupted) {
         this.url = url;
         this.isInterrupted = isInterrupted;
     }
@@ -35,7 +35,7 @@ public class ParseUrl extends RecursiveTask<String> {
             Document doc = getDocumentByUrl(url);
             Elements rootElements = doc.select("a");
 
-            List<ParseUrl> linkGrabers = new ArrayList<>();
+            List<UrlParser> linkGrabers = new ArrayList<>();
             rootElements.forEach(element -> {
                 String link = element.attr("abs:href");
                 if (link.startsWith(element.baseUri())
@@ -45,13 +45,13 @@ public class ParseUrl extends RecursiveTask<String> {
                         && !urlList.contains(link)
                 ) {
                     urlList.add(link);
-                    ParseUrl linkGraber = new ParseUrl(link, false);
+                    UrlParser linkGraber = new UrlParser(link, false);
                     linkGraber.fork();
                     linkGrabers.add(linkGraber);
                 }
             });
 
-            for (ParseUrl lg : linkGrabers) {
+            for (UrlParser lg : linkGrabers) {
                 String text = lg.join();
                 if (!text.equals("")) {
                     result.append("\n");

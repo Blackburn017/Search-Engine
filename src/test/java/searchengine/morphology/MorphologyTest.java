@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.TreeMap;
 
-class MorphologyAnalyzerTest {
+class MorphologyTest {
 
-    MorphologyAnalyzer analyzer = new MorphologyAnalyzer();
+    Morphology analyzer = new Morphology();
     String testText = "Почему бы нам не начать анализировать этот замечательный тестовый текст, ведь его так интересно анализировать.";
 
     @Test

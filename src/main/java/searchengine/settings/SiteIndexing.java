@@ -1,7 +1,7 @@
 package searchengine.settings;
 
-import searchengine.morphology.MorphologyAnalyzer;
-import searchengine.parsing.SiteMapBuilder;
+import searchengine.morphology.Morphology;
+import searchengine.parsing.SiteMap;
 import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.UnsupportedMimeTypeException;
@@ -61,8 +61,8 @@ public class SiteIndexing extends Thread{
         site.setStatus(Status.INDEXING);
         site.setStatusTime(new Date());
         siteRepositoryService.save(site);
-        SiteMapBuilder builder = new SiteMapBuilder(site.getUrl(), this.isInterrupted());
-        builder.builtSiteMap();
+        SiteMap builder = new SiteMap(site.getUrl(), this.isInterrupted());
+        builder.buildSiteMap();
         List<String> allSiteUrls = builder.getSiteMap();
         for(String url : allSiteUrls) {
             runOneSiteIndexing(url);
@@ -86,7 +86,7 @@ public class SiteIndexing extends Thread{
                 String name = field.getName();
                 float weight = field.getWeight();
                 String stringByTeg = getStringByTeg(name, page.getContent());
-                MorphologyAnalyzer analyzer = new MorphologyAnalyzer();
+                Morphology analyzer = new Morphology();
                 TreeMap<String, Integer> tempMap = analyzer.textAnalyzer(stringByTeg);
                 map.putAll(tempMap);
                 indexing.putAll(indexingLemmas(tempMap, weight));

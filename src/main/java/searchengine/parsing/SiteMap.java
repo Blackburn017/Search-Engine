@@ -6,19 +6,19 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.stream.Collectors;
 
 
-public class SiteMapBuilder {
+public class SiteMap {
 
     private final String url;
     private final boolean isInterrupted;
     private List<String> siteMap;
 
-    public SiteMapBuilder(String url, boolean isInterrupted){
+    public SiteMap(String url, boolean isInterrupted){
         this.url = url;
         this.isInterrupted = isInterrupted;
     }
 
-    public void builtSiteMap() {
-        String text = new ForkJoinPool().invoke(new ParseUrl(url, isInterrupted));
+    public void buildSiteMap() {
+        String text = new ForkJoinPool().invoke(new UrlParser(url, isInterrupted));
         siteMap = stringToList(text);
     }
 

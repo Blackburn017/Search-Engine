@@ -1,6 +1,6 @@
 package searchengine.settings;
 
-import searchengine.morphology.MorphologyAnalyzer;
+import searchengine.morphology.Morphology;
 import searchengine.service.IndexRepositoryService;
 import searchengine.service.LemmaRepositoryService;
 import searchengine.service.PageRepositoryService;
@@ -172,7 +172,7 @@ public class Search {
     }
 
     private String getSnippet (String html, Request request) {
-        MorphologyAnalyzer analyzer = new MorphologyAnalyzer();
+        Morphology analyzer = new Morphology();
         String string = "";
         Document document = Jsoup.parse(html);
         Elements titleElements = document.select("title");

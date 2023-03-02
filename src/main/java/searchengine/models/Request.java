@@ -1,6 +1,6 @@
 package searchengine.models;
 
-import searchengine.morphology.MorphologyAnalyzer;
+import searchengine.morphology.Morphology;
 
 import java.util.*;
 
@@ -22,7 +22,7 @@ public class Request {
         this.req = req;
         reqLemmas = new ArrayList<>();
         try {
-            MorphologyAnalyzer analyzer = new MorphologyAnalyzer();
+            Morphology analyzer = new Morphology();
             reqLemmas.addAll(analyzer.getLemmas(req));
         }catch (Exception e) {
             System.out.println("ошибка морфологочиского анализа");

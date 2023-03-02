@@ -1,4 +1,4 @@
-package searchengine.secure;
+package searchengine.web;
 
 import searchengine.settings.SearchSettings;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,11 +13,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 @EnableWebSecurity
-public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
+public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     private final SearchSettings settings;
 
-    public WebSecurityConfiguration(SearchSettings settings) {
+    public SecurityConfiguration(SearchSettings settings) {
         this.settings = settings;
     }
 

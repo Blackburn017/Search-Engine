@@ -12,14 +12,14 @@ import java.io.IOException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ParseUrlTest {
+class UrlParserTest {
 //    @Mock
 //    ParseUrl parseUrl;
 
     @Test
     void computeTestInterrupted() {
-        ParseUrl parseUrl = new ParseUrl("https://jsoup.org/", true);
-        assertEquals("", parseUrl.compute());
+        UrlParser urlParser = new UrlParser("https://jsoup.org/", true);
+        assertEquals("", urlParser.compute());
     }
 
     @Test
@@ -27,12 +27,12 @@ class ParseUrlTest {
         Document document = Jsoup.parse(new File("C:\\Users\\Lenovo\\IdeaProjects\\SearchEngine-Skillbox-\\src\\main\\resources\\templates\\testpage.html"), "UTF-8");
         String url = "https://jsoup.org/";
 
-        ParseUrl parseUrl = new ParseUrl(url, false);
+        UrlParser urlParser = new UrlParser(url, false);
 
         Mockito.doReturn(document)
-                .when(Mockito.mock(ParseUrl.class))
+                .when(Mockito.mock(UrlParser.class))
                 .getDocumentByUrl(url);
 
-        MatcherAssert.assertThat(parseUrl.compute(), Matchers.containsString("dsfdfafdsf"));
+        MatcherAssert.assertThat(urlParser.compute(), Matchers.containsString("dsfdfafdsf"));
     }
 }
