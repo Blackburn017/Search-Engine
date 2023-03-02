@@ -1,0 +1,66 @@
+2023-03-02 16:48:55,123 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application using Java 18.0.2.1 on WIN-VQG10684J14 with PID 2236 (C:\skillbox\DiplomSkillbox\target\classes started by Blackburn in C:\skillbox\DiplomSkillbox)
+2023-03-02 16:48:55,125 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2023-03-02 16:48:55,216 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-02 16:48:55,217 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-02 16:48:56,218 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-02 16:48:56,313 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 78 ms. Found 5 JPA repository interfaces.
+2023-03-02 16:48:57,115 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2023-03-02 16:48:57,127 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-02 16:48:57,128 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2023-03-02 16:48:57,128 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.54]
+2023-03-02 16:48:57,231 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2023-03-02 16:48:57,232 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2015 ms
+2023-03-02 16:48:57,468 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-02 16:48:57,526 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.4.32.Final
+2023-03-02 16:48:57,680 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-02 16:48:57,801 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2023-03-02 16:48:58,188 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2023-03-02 16:48:58,221 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-02 16:48:59,118 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-02 16:48:59,127 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-02 16:48:59,762 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-02 16:49:00,099 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1492311c, org.springframework.security.web.context.SecurityContextPersistenceFilter@30be8c4b, org.springframework.security.web.header.HeaderWriterFilter@7ac1c7c2, org.springframework.security.web.authentication.logout.LogoutFilter@43e60351, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6077735c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6c66458, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@dfdac1f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@eae1cdc, org.springframework.security.web.session.SessionManagementFilter@6ec564b2, org.springframework.security.web.access.ExceptionTranslationFilter@412be557, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@30814a3f]
+2023-03-02 16:49:00,340 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2023-03-02 16:49:00,562 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2023-03-02 16:49:00,578 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2023-03-02 16:49:00,601 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-02 16:49:00,614 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.137 seconds (JVM running for 6.902)
+2023-03-02 16:49:08,009 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-02 16:49:08,009 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-03-02 16:49:08,010 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-03-02 16:49:10,234 INFO searchengine.settings.Statistic [http-nio-8080-exec-7] Получение статистики.
+2023-03-02 16:49:11,910 INFO searchengine.service.impl.IndexingServiceImpl [http-nio-8080-exec-5] Попытка запуска индексации всех сайтов
+2023-03-02 16:49:11,912 INFO searchengine.service.impl.IndexingServiceImpl [http-nio-8080-exec-5] Индексация всех сайтов запущена
+2023-03-02 16:49:17,759 WARN searchengine.parsing.ParseUrl [ForkJoinPool-3-worker-6] Ошибка парсинга сайта: https://www.svetlovka.ru/projects/kids/
+2023-03-02 16:49:26,365 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-2] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=10037
+2023-03-02 16:49:26,368 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-4] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=6054
+2023-03-02 16:49:27,083 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-7] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=9942
+2023-03-02 16:49:27,193 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-4] Ошибка парсинга сайта: https://dombulgakova.ru/wp-content/uploads/2023/02/video5451791942331410864.mp4
+2023-03-02 16:49:27,209 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-2] Ошибка парсинга сайта: https://dombulgakova.ru/wp-content/uploads/2023/02/video5451791942331410863.mp4
+2023-03-02 16:49:27,352 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-8] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=9477
+2023-03-02 16:49:27,512 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-3] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=8119
+2023-03-02 16:49:27,581 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-7] Ошибка парсинга сайта: https://dombulgakova.ru/wp-content/uploads/2023/02/img_4127.mp4
+2023-03-02 16:49:27,764 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-2] Ошибка парсинга сайта: https://dombulgakova.ru/wp-content/uploads/2023/02/img_4489.mp4
+2023-03-02 16:49:28,272 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-8] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=10159
+2023-03-02 16:49:28,376 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-6] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=10134
+2023-03-02 16:49:28,479 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-7] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=9356
+2023-03-02 16:49:28,690 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-2] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=9432
+2023-03-02 16:49:28,754 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-4] Ошибка парсинга сайта: https://dombulgakova.ru/wp-content/uploads/2023/02/img_4255.mp4
+2023-03-02 16:49:29,130 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-8] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=10014
+2023-03-02 16:49:29,193 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-3] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=10102
+2023-03-02 16:49:29,195 WARN searchengine.parsing.ParseUrl [ForkJoinPool-2-worker-5] Ошибка парсинга сайта: https://dombulgakova.ru/?method=ical&id=10138
+2023-03-02 16:56:12,552 INFO searchengine.settings.Statistic [http-nio-8080-exec-2] Получение статистики.
+2023-03-02 16:56:23,522 INFO searchengine.settings.Statistic [http-nio-8080-exec-3] Получение статистики.
+2023-03-02 16:56:24,445 INFO searchengine.settings.Statistic [http-nio-8080-exec-3] Получение статистики.
+2023-03-02 16:56:25,429 INFO searchengine.settings.Statistic [http-nio-8080-exec-2] Получение статистики.
+2023-03-02 16:56:26,703 INFO searchengine.settings.Statistic [http-nio-8080-exec-6] Получение статистики.
+2023-03-02 16:56:27,841 INFO searchengine.settings.Statistic [http-nio-8080-exec-1] Получение статистики.
+2023-03-02 16:58:30,426 INFO searchengine.settings.Statistic [http-nio-8080-exec-5] Получение статистики.
+2023-03-02 17:21:56,936 INFO searchengine.settings.Statistic [http-nio-8080-exec-5] Получение статистики.
+2023-03-02 17:22:13,965 INFO searchengine.service.impl.SearchServiceImpl [http-nio-8080-exec-10] Запрос на поиск строки- "страница"
+2023-03-02 17:22:15,464 INFO searchengine.service.impl.SearchServiceImpl [http-nio-8080-exec-10] Запрос на поиск строки обработан, результат получен.
+2023-03-02 17:28:36,138 INFO searchengine.settings.Statistic [http-nio-8080-exec-7] Получение статистики.
+2023-03-02 17:49:04,529 INFO searchengine.settings.Statistic [http-nio-8080-exec-9] Получение статистики.
+2023-03-02 17:49:19,134 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-02 17:49:19,142 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-03-02 17:49:19,164 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
