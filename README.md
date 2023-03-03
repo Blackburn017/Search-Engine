@@ -28,7 +28,7 @@ API со следующими основными функциями:
 Java Core, Spring Boot, JPA, Hibernate, JDBC, Security, MySQL WorkBench, REST API, JSOUP, Maven, Git, JUnit
 
 
-## Запуск приложения
+# Запуск приложения
 Стартовая страница поискового движка находится по адресу : http://localhost:8080/ <br>
 После запуска система запрашивает логин/пароль, которые указаны в файле конфигурации `\src\main\resources\application.yaml`:
 ```
@@ -66,7 +66,7 @@ Java Core, Spring Boot, JPA, Hibernate, JDBC, Security, MySQL WorkBench, REST AP
 ![](.github/images/SearchPage.png)
 
 
-## Настройки проекта перед запуском
+# Настройки проекта перед запуском
 Для начала, необходимо создать локальный эмулятор в MySQL Workbench:
 
 
