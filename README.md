@@ -68,9 +68,13 @@ Java Core, Spring Boot, JPA, Hibernate, JDBC, Security, MySQL WorkBench, REST AP
 
 ## Настройки проекта перед запуском
 Для начала, необходимо создать локальный эмулятор в MySQL Workbench:
-![](.github/images/DataBase.png)
+
+
+![](.github/images/MySQLLocal.png)
 
 затем необходимо создать базу данных `search_engine`.
+
+
 ![](.github/images/DataBase.png)
 
 
