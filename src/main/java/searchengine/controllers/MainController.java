@@ -12,9 +12,4 @@ public class MainController {
         return "index";
     }
 
-    @GetMapping("/test")
-    public String test() {
-        return "testpage";
-    }
-
 }
