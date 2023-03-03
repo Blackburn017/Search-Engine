@@ -1,4 +1,3 @@
-
 spring:
   datasource:
     url: jdbc:mysql://localhost:3306/search_engine
@@ -17,7 +16,7 @@ config:
   webinterface: /admin
   site:
     - url: https://dombulgakova.ru
-      name: Dom Bulgakova
+      name: Дом Булгакова
     - url: https://www.svetlovka.ru
       name: Библиотека
 
