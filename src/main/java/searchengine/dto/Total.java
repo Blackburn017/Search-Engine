@@ -1,4 +1,4 @@
-package searchengine.service.Entity;
+package searchengine.dto;
 
 public class Total {
     long sites;

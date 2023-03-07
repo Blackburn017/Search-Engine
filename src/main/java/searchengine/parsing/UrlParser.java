@@ -59,7 +59,7 @@ public class UrlParser extends RecursiveTask<String> {
                 }
             }
         } catch (IOException | InterruptedException e) {
-            log.warn("Ошибка парсинга сайта: " + url);
+            log.info("Ошибка парсинга сайта: " + url);
         }
         return result.toString();
     }

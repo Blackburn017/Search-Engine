@@ -6,7 +6,7 @@ import searchengine.service.LemmaRepositoryService;
 import searchengine.service.PageRepositoryService;
 import searchengine.service.SiteRepositoryService;
 import searchengine.service.responses.SearchResponseService;
-import searchengine.service.Entity.SearchData;
+import searchengine.dto.SearchData;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;

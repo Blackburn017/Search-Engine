@@ -1,7 +1,7 @@
 package searchengine.service.responses;
 
 
-import searchengine.service.Entity.Statistics;
+import searchengine.dto.Statistics;
 
 public class StatisticResponseService implements ResponseService {
     boolean result;

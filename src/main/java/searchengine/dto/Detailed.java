@@ -1,4 +1,4 @@
-package searchengine.service.Entity;
+package searchengine.dto;
 
 import searchengine.models.Status;
 

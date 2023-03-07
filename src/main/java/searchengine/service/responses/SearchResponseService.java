@@ -1,6 +1,6 @@
 package searchengine.service.responses;
 
-import searchengine.service.Entity.SearchData;
+import searchengine.dto.SearchData;
 
 public class SearchResponseService implements ResponseService {
     private boolean result;
